@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie-edge">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <meta name="format-detection" content="telephone=yes" />
+        <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Coiny" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/memoria.css">
+        <title>Interactive Majestic</title>
+        <link rel="stylesheet" href="css/owl-carousel.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/sopa.css">
+        <link rel="stylesheet" href="wordfind.css">
+        <script src="js/jquery.js"></script>
+        <script src="bootstrap/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/colores.js"></script>
+        <script type="text/javascript" src="js/eventos.js"></script>
+        <script type="text/javascript" src="js/activity4.js"></script>
+        <script type="text/javascript" src="wordfind.js"></script>
+        <script type="text/javascript" src="wordfindgame.js"></script>
+
+        <style type="text/css">
+            .text-soup {
+                font-family: 'Comfortaa', cursive;
+                font-size: 30px;
+                line-height: 27px;
+            }
+            #scroller {
+                left: auto !important;
+                margin: auto;
+            }
+            #wrapper {
+                z-index: 1;
+                overflow: hidden;
+                bottom: 44px;
+                margin-left: auto;
+                margin-right: auto;
+                width: 100%;
+            }
+            .item{
+                text-align: left;
+                padding-bottom: 5px;
+                padding-top: 5px;
+                line-height: 300%;
+            }
+            input:invalid {
+                border: 2px solid red;
+                border-radius: 5px;
+                border-bottom: 1px solid #1F72EA;
+            }
+            input:valid {
+                border-radius: 5px;
+                color: #00BC00;
+                border-bottom: 1px solid #1F72EA;
+            }
+            .menu   {
+                background-color: #D01D36;
+                color: white;
+                padding-top: 5px;
+                padding-left: 10px;
+                padding-right: 10px;
+                padding-bottom: 2px;
+                width: 100%;
+            }
+            .menu a {
+                color: white;
+                font-size: 15px;
+            }
+            #logoMajestic {
+                width: 50px;
+            }
+            .navbar-brand:hover {
+                color: white;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Barra de Navegación -->
+        <div class="menu">
+            <a style="color: white" href="#" class="navbar-brand"><img id="logoMajestic" src="images/majestic.png" alt=""></a>
+            <a class="navbar-brand" href="menu.html">Menu</a>
+            <a class="navbar-brand" href="soup-menu.html">Soup menu</a>
+        </div>
+
+        <div class="container">
+            <div style="margin-top: 20px;">
+                <div class="brand col" align="center">
+                    <p class="hidden-xs" style="font-family: 'Comfortaa', cursive;font-size: 40px; color: #85144b;">Alphabet soup 4</p>
+                    <p class="hidden-xs" style="font-family: 'Comfortaa', cursive;font-size: 30px; color: #85144b;">Present simple (family and friends)</p>
+                </div>
+            </div>
+        </div>
+			
+        <div class="page bg01">
+			<div class="container">
+                <div class="col-12 mx-auto">
+                    <h5 style="font-size: 15px; margin-left: 20px;">
+                        <span style="font-size: 17px; font-family: 'Comfortaa', cursive; color: #291493; text-align: left;">•</span>
+                        Find in the alphabet soup the words that correctly complete the sentences. Click on the first letter and the last letter to select the word. Then, write down the answers in each sentence.
+                    </h5>
+                </div>	
+
+				<div id="wrapper">
+					<div id="scroller">
+					 	<div class="container" id="lienzo"></div>
+						<hr>
+						<ul style="list-style: decimal;" class="item">
+							<li>&nbsp; She is my <input style="background-color: rgba(255, 255, 255, .1); height: 35px; text-align: center;" pattern="grandmother|Grandmother">. Her mom is my mom.</li>
+							<li>&nbsp; I really love my  <input style="background-color: rgba(255, 255, 255, .1); height: 35px; text-align: center;" pattern="parents|Parents">. We spent time together at the weekends.</li>
+							<li>&nbsp; People say that a  <input style="background-color: rgba(255, 255, 255, .1); height: 35px; text-align: center;" pattern="boy|Boy">should wear only blue clothes.</li>
+							<li>&nbsp; She is a  <input style="background-color: rgba(255, 255, 255, .1); height: 35px; text-align: center;" pattern="girl|Girl">. She likes wearing pink clothes and play with dolls.</li>
+							<li>&nbsp; My mom’s sister is my <input style="background-color: rgba(255, 255, 255, .1); height: 35px; text-align: center;" pattern="aunt|Aunt">, she gives me the best advices.</li>
+							<li>&nbsp; My <input style="background-color: rgba(255, 255, 255, .1); height: 35px; text-align: center;" pattern="sister|Sister">likes baking cookies and cakes for her grandchildren.</li>
+							<li>&nbsp; My best friend really loves his <input style="background-color: rgba(255, 255, 255, .1); height: 35px; text-align: center;" pattern="daughter|Daughter">. She’s like his little princess.</li>
+							<li>&nbsp; We are best <input style="background-color: rgba(255, 255, 255, .1); height: 35px; text-align: center;" pattern="friends|Friends">, we like to share good memories.</li>
+							<li>&nbsp; They’re a four-family member, they have two <input style="background-color: rgba(255, 255, 255, .1); height: 35px; text-align: center;" pattern="children|Children">.</li>
+							<li>&nbsp; Your <input style="background-color: rgba(255, 255, 255, .1); height: 35px; text-align: center;" pattern="family|Family">are the only people who take care of you all your life.</li>
+							<li>&nbsp; My <input style="background-color: rgba(255, 255, 255, .1); height: 35px; text-align: center;" pattern="baby|Baby">cries every time he’s hungry.</li>
+							<li>&nbsp; My <input style="background-color: rgba(255, 255, 255, .1); height: 35px; text-align: center;" pattern="grandfather|Grandfather">is an old person, he is 87 years old.</li>
+							<li>&nbsp; You’re a <input style="background-color: rgba(255, 255, 255, .1); height: 35px; text-align: center;" pattern="young|Young">person. You’re 18 years old.</li>
+							<li>&nbsp; He is my <input style="background-color: rgba(255, 255, 255, .1); height: 35px; text-align: center;" pattern="brother|Brother">. We have the same father.</li>
+							<li>&nbsp; He is my <input style="background-color: rgba(255, 255, 255, .1); height: 35px; text-align: center;" pattern="father|Father">. He is married to my mother.</li>
+							<li>&nbsp; My <input style="background-color: rgba(255, 255, 255, .1); height: 35px; text-align: center;" pattern="uncle|Uncle">is very funny. He is my mom’s brother.</li>
+							<li>&nbsp; I enjoy playing with my <input style="background-color: rgba(255, 255, 255, .1); height: 35px; text-align: center;" pattern="cousin|Cousin">, our parents are brothers.</li>
+							<li>&nbsp; They are <input style="background-color: rgba(255, 255, 255, .1); height: 35px; text-align: center;" pattern="old|Old">people, they are 68 years old.</li>
+							<li>&nbsp; She’s my <input style="background-color: rgba(255, 255, 255, .1); height: 35px; text-align: center;" pattern="mother|Mother">, she’s married to my father.</li>
+							<li>&nbsp; Oscar has two children, one daughter and one <input style="background-color: rgba(255, 255, 255, .1); height: 35px; text-align: center;" pattern="son|Son">.</li>
+						</ul>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="btn-group-sm mx-auto">
+                        <a href="respuestas/soup4.pdf">
+                            <button type="button" class="btn btn-outline-dark">Answers</button>
+                        </a>
+                        <!-- <a href="../index.html">
+                            <button type="button" class="btn btn-outline-danger">Start</button>
+                        </a>
+                        <a href="menu.html">
+                            <button type="button" class="btn btn-outline-warning">Behind</button>
+                        </a> -->
+                        <a href="soup4.html">
+                            <button type="button" class="btn btn-outline-success">Restart</button>
+                        </a>
+                        <!-- <a href="#">
+                            <button type="button" class="btn btn-outline-primary">Following</button>
+                        </a> -->
+                    </div>
+                </div>
+            </div>
+
+			<div style="padding-bottom: 640px;background: no-repeat url(images/ninos.png) bottom center;width: 100%;"></div>
+				
+            <footer>
+                <div class="container wow fadeInUp">
+                    <div class="row">
+                        <p style="color: white; font-size: 10px;">
+                            <span>&copy;&nbsp;
+                                <span class="copyright-year"></span>
+                                Todos los derechos reservados. &nbsp;
+                            </span>
+                            <a style="color: white; font-size: 10px;" href="https://www.3d-estudio.com.mx">3D Estudio.</a>
+                        </p>
+                    </div>
+                </div>
+            </footer>
+     	</div>
+
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="js/sweetalert.min.js"></script>
+        <script src="js/script.js"></script>
+        <script>
+            var arrayTemp = [
+                'grandmother',    //ok
+                'parents',    //ok
+                'boy',    //ok
+                'girl',    //ok
+                'aunt',     //ok
+                'sister',      //ok
+                'daughter',    //ok
+                'friends',      //ok
+                'children',    //ok
+                'family',       //ok
+                'baby',    //ok
+                'grandfather',    //ok
+                'young',    //ok
+                'brother',     //ok
+                'father',  //ok
+                'uncle',    //ok
+                'cousin',    //ok
+                'old',    //ok
+                'mother',     //ok
+                'son',     //ok
+            ];
+            var temp = arrayTemp.map(word => WordFindGame.insertWordBefore($('#add-word').parent(), word));
+        
+            $(document).on('click', '#lienzo', function () {
+                if(arrayTemp.length == $('#lienzo .line').length) {
+                    swal("Congratulations!", "You did it very well.", "success");
+                }
+            });
+        </script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="set/js/lockWebSite.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/sopa.js"></script>
+    </body>
+</html>

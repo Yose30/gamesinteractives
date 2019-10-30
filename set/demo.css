@@ -1,0 +1,1005 @@
+h3 {
+    margin: 30px 0 20px 0;
+    clear: both;
+}
+
+ul.normal {
+    width: 500px;
+}
+
+ul.normal li {
+    padding: 5px;
+}
+
+ul.float {
+    list-style-position: inside;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+ul.float li {
+    float: left;
+    margin: 10px;
+}
+
+ul.inline {
+    list-style-position: inside;
+    padding: 0;
+    margin: 0;
+}
+
+ul.inline li {
+    display: inline-block;
+    vertical-align: top;
+    margin: 10px;
+}
+
+.list div {
+    margin: 2px 0;
+    padding: 2px;
+}
+
+
+
+.menu   {
+            background-color: #D01D36;
+            color: white;
+            padding-top: 5px;
+            padding-left: 5px;
+            padding-right: 5px;
+            padding-bottom: 2px;
+            width: 100%;
+            font-size: 15px;
+            margin-top: 0px;
+            margin-left: 0px;
+            margin-right: 0px;
+          }
+
+/* Para 320px */  
+@media only screen and (max-width: 320px) and (min-width: 5px)  {  
+  
+            .imdrag{
+            margin-right: 0px;
+            margin-left: 0px;
+            background-image: url('images/320.png');
+            height: 158px;
+            background-repeat: no-repeat;
+            margin-top: 0px;
+            }
+
+}
+
+@media only screen and (min-width: 321px) and (max-width: 568px) {  
+            .imdrag{
+            margin-right: 0px;
+            margin-left: 0px;
+            background-image: url('images/568.png');
+            height: 290px;
+            background-repeat: no-repeat;
+            margin-top: -285px;
+            }
+            .drop {
+            margin: 20px 0;
+            padding: 5px;
+            border: 2px dotted orange;
+            border-radius: 5px;
+            float: left;
+            width: 146px;
+            height: 72px;
+            margin-top: 53px;
+            margin-left: 47px;
+            }
+
+            .drop.hovering {
+            background-color: #21FF06;
+            }
+            .drop2 {
+            margin: 20px 0;
+            padding: 5px;
+            border: 2px dotted orange;
+            border-radius: 5px;
+            float: left;
+            width: 134px;
+            height: 72px;
+            margin-top: -92px;
+            margin-left: 197px;
+            }
+
+            .drop2.hovering {
+            background-color: #21FF06;
+            }
+            .drop3 {
+            margin: 20px 0;
+            padding: 5px;
+            border: 2px dotted orange;
+            border-radius: 5px;
+            float: left;
+            width: 132px;
+            height: 72px;
+            margin-top: -92px;
+            margin-left: 336px;
+            }
+
+            .drop3.hovering {
+            background-color: #21FF06;
+            }
+            .drop4 {
+            margin: 20px 0;
+            padding: 5px;
+            border: 2px dotted orange;
+            border-radius: 5px;
+            float: left;
+            width: 146px;
+            height: 74px;
+            margin-top: -9px;
+            margin-left: 47px;
+            }
+
+            .drop4.hovering {
+            background-color: #21FF06;
+            }
+            .drop5 {
+            margin: 20px 0;
+            padding: 5px;
+            border: 2px dotted orange;
+            border-radius: 5px;
+            float: left;
+            width: 135px;
+            height: 72px;
+            margin-top: -93px;
+            margin-left: 196px;
+            }
+
+            .drop5.hovering {
+            background-color: #21FF06;
+            }
+            .drop6 {
+            margin: 20px 0;
+            padding: 5px;
+            border: 2px dotted orange;
+            border-radius: 5px;
+            float: left;
+            width: 132px;
+            height: 75px;
+            margin-top: -95px;
+            margin-left: 335px;
+            }
+
+            .drop6.hovering {
+            background-color: #21FF06;
+            }
+            .drop7 {
+            margin: 20px 0;
+            border: 2px dotted orange;
+            border-radius: 5px;
+            width: 166px;
+            height: 45px;
+            margin-top: -9px;
+            margin-left: 110px;
+            float: left;
+            }
+
+            .drop7.hovering {
+            background-color: #21FF06;
+            }
+            .drop8 {
+            margin: 20px 0;
+            border: 2px dotted orange;
+            border-radius: 5px;
+            width: 166px;
+            height: 45px;
+            margin-top: -10px;
+            margin-left: 60px;
+            float: left;
+            }
+
+            .drop8.hovering {
+            background-color: #21FF06;
+            }
+} 
+
+@media only screen and (max-width: 375px) and (min-width: 321px)  {  
+  
+            .imdrag{
+            margin-right: 0px;
+            margin-left: 0px;
+            background-image: url('images/375.png');
+            height: 185px;
+            background-repeat: no-repeat;
+            }
+
+            .drop6 {
+            margin: 20px 0;
+            padding: 5px;
+            border: 2px dotted orange;
+            border-radius: 5px;
+            float: left;
+            width: 157px;
+            height: 89px;
+            margin-top: -111px;
+            margin-left: 397px;
+            }
+
+            .drop6.hovering {
+            background-color: #21FF06;
+            }
+
+}
+
+@media only screen and (min-width: 569px) and (max-width: 667px) {  
+          .imdrag{
+            margin-right: 0px;
+            margin-left: 0px;
+            margin-top: -319px;
+            background-image: url('images/667.png');
+            height: 340px;
+            background-repeat: no-repeat;
+            }
+            .drop {
+            margin: 20px 0;
+            padding: 5px;
+            border: 2px dotted orange;
+            border-radius: 5px;
+            float: left;
+            width: 174px;
+            height: 89px;
+            margin-top: 82px;
+            margin-left: 55px;
+            }
+
+            .drop.hovering {
+            background-color: #21FF06;
+            }
+            .drop2 {
+            margin: 20px 0;
+            padding: 5px;
+            border: 2px dotted orange;
+            border-radius: 5px;
+            float: left;
+            width: 161px;
+            height: 89px;
+            margin-top: -109px;
+            margin-left: 233px;
+            }
+
+            .drop2.hovering {
+            background-color: #21FF06;
+            }
+            .drop3 {
+            margin: 20px 0;
+            padding: 5px;
+            border: 2px dotted orange;
+            border-radius: 5px;
+            float: left;
+            width: 160px;
+            height: 89px;
+            margin-top: -108px;
+            margin-left: 395px;
+            }
+
+            .drop3.hovering {
+            background-color: #21FF06;
+            }
+            .drop4 {
+            margin: 20px 0;
+            padding: 5px;
+            border: 2px dotted orange;
+            border-radius: 5px;
+            float: left;
+            width: 174px;
+            height: 89px;
+            margin-top: -9px;
+            margin-left: 55px;
+            }
+
+            .drop4.hovering {
+            background-color: #21FF06;
+            }
+            .drop5 {
+            margin: 20px 0;
+            padding: 5px;
+            border: 2px dotted orange;
+            border-radius: 5px;
+            float: left;
+            width: 161px;
+            height: 89px;
+            margin-top: -110px;
+            margin-left: 232px;
+            }
+
+            .drop5.hovering {
+            background-color: #21FF06;
+            }
+            .drop6 {
+            margin: 20px 0;
+            padding: 5px;
+            border: 2px dotted orange;
+            border-radius: 5px;
+            float: left;
+            width: 157px;
+            height: 89px;
+            margin-top: -111px;
+            margin-left: 397px;
+            }
+
+            .drop6.hovering {
+            background-color: #21FF06;
+            }
+            .drop7 {
+            padding: 5px;
+            border: 2px dotted orange;
+            border-radius: 5px;
+            width: 166px;
+            height: 45px;
+            margin-top: 0px;
+            margin-left: 169px;
+            float: left;
+            }
+
+            .drop7.hovering {
+            background-color: #21FF06;
+            }
+            .drop8 {
+            padding: 5px;
+            border: 2px dotted orange;
+            border-radius: 5px;
+            width: 166px;
+            height: 60px;
+            margin-top: -55px;
+            margin-left: 423px;
+            float: left;
+            }
+
+            .drop8.hovering {
+            background-color: #21FF06;
+            }
+} 
+
+@media only screen and (min-width: 668px) and (max-width: 736px) {  
+           .imdrag{
+            margin-right: 0px;
+            margin-left: 0px;
+            margin-top: -358px;
+            background-image: url('images/736.png');
+            height: 345px;
+            background-repeat: no-repeat;
+            }
+            .drop {
+            margin: 20px 0;
+            padding: 5px;
+            border: 2px dotted orange;
+            border-radius: 5px;
+            float: left;
+            width: 190px;
+            height: 88px;
+            margin-top: 95px;
+            margin-left: 65px;
+            }
+
+            .drop.hovering {
+            background-color: #21FF06;
+            }
+            .drop2 {
+            margin: 20px 0;
+            padding: 5px;
+            border: 2px dotted orange;
+            border-radius: 5px;
+            float: left;
+            width: 175px;
+            height: 89px;
+            margin-top: 95px;
+            margin-left: 5px;
+            }
+
+            .drop2.hovering {
+            background-color: #21FF06;
+            }
+            .drop3 {
+            margin: 20px 0;
+            padding: 5px;
+            border: 2px dotted orange;
+            border-radius: 5px;
+            float: left;
+            width: 160px;
+            height: 89px;
+            margin-top: -109px;
+            margin-left: 440px;
+            }
+
+            .drop3.hovering {
+            background-color: #21FF06;
+            }
+            .drop4 {
+            margin: 20px 0;
+            padding: 5px;
+            border: 2px dotted orange;
+            border-radius: 5px;
+            float: left;
+            width: 190px;
+            height: 89px;
+            margin-top: -3px;
+            margin-left: 65px;
+            }
+
+            .drop4.hovering {
+            background-color: #21FF06;
+            }
+            .drop5 {
+            margin: 20px 0;
+            padding: 5px;
+            border: 2px dotted orange;
+            border-radius: 5px;
+            float: left;
+            width: 174px;
+            height: 89px;
+            margin-top: -2px;
+            margin-left: 5px;
+            }
+
+            .drop5.hovering {
+            background-color: #21FF06;
+            }
+            .drop6 {
+            margin: 20px 0;
+            padding: 5px;
+            border: 2px dotted orange;
+            border-radius: 5px;
+            float: left;
+            width: 161px;
+            height: 89px;
+            margin-top: -109px;
+            margin-left: 439px;
+            }
+
+            .drop6.hovering {
+            background-color: #21FF06;
+            }
+            .drop7 {
+            padding: 5px;
+            border: 2px dotted orange;
+            border-radius: 5px;
+            width: 166px;
+            height: 45px;
+            margin-top: 5px;
+            margin-left: 169px;
+            float: left;
+            }
+
+            .drop7.hovering {
+            background-color: #21FF06;
+            }
+            .drop8 {
+            margin: 20px 0;
+            padding: 5px;
+            border: 2px dotted orange;
+            border-radius: 5px;
+            width: 166px;
+            height: 60px;
+            margin-top: -10px;
+            margin-left: 170px;
+            float: left;
+            }
+
+            .drop8.hovering {
+            background-color: #21FF06;
+            }
+
+} 
+
+@media only screen and (min-width: 737px) and (max-width: 812px) { 
+            .imdrag{
+            margin-right: 0px;
+            margin-left: 0px;
+            margin-top: -369px;
+            background-image: url('images/812.png');
+            height: 370px;
+            background-repeat: no-repeat;
+            }
+            .drop {
+            margin: 20px 0;
+            padding: 5px;
+            border: 2px dotted orange;
+            border-radius: 5px;
+            float: left;
+            width: 207px;
+            height: 104px;
+            margin-top: 95px;
+            margin-left: 75px;
+            }
+
+            .drop.hovering {
+            background-color: #21FF06;
+            }
+            .drop2 {
+            margin: 20px 0;
+            padding: 5px;
+            border: 2px dotted orange;
+            border-radius: 5px;
+            float: left;
+            width: 194px;
+            height: 104px;
+            margin-top: 95px;
+            margin-left: 5px;
+            }
+
+            .drop2.hovering {
+            background-color: #21FF06;
+            }
+            .drop3 {
+            margin: 20px 0;
+            padding: 5px;
+            border: 2px dotted orange;
+            border-radius: 5px;
+            float: left;
+            width: 182px;
+            height: 104px;
+            margin-top: -124px;
+            margin-left: 486px;
+            }
+
+            .drop3.hovering {
+            background-color: #21FF06;
+            }
+            .drop4 {
+            margin: 20px 0;
+            padding: 5px;
+            border: 2px dotted orange;
+            border-radius: 5px;
+            float: left;
+            width: 207px;
+            height: 104px;
+            margin-top: -3px;
+            margin-left: 75px;
+            }
+
+            .drop4.hovering {
+            background-color: #21FF06;
+            }
+            .drop5 {
+            margin: 20px 0;
+            padding: 5px;
+            border: 2px dotted orange;
+            border-radius: 5px;
+            float: left;
+            width: 192px;
+            height: 104px;
+            margin-top: -2px;
+            margin-left: 6px;
+            }
+
+            .drop5.hovering {
+            background-color: #21FF06;
+            }
+            .drop6 {
+            margin: 20px 0;
+            padding: 5px;
+            border: 2px dotted orange;
+            border-radius: 5px;
+            float: left;
+            width: 182px;
+            height: 104px;
+            margin-top: -124px;
+            margin-left: 486px;
+            }
+
+            .drop6.hovering {
+            background-color: #21FF06;
+            }
+            .drop7 {
+            padding: 5px;
+            border: 2px dotted orange;
+            border-radius: 5px;
+            width: 166px;
+            height: 45px;
+            margin-top: 0px;
+            margin-left: 169px;
+            float: left;
+            }
+
+            .drop7.hovering {
+            background-color: #21FF06;
+            }
+            .drop8 {
+            padding: 5px;
+            border: 2px dotted orange;
+            border-radius: 5px;
+            width: 166px;
+            height: 60px;
+            margin-top: -10px;
+            margin-left: 250px;
+            float: left;
+            }
+
+            .drop8.hovering {
+            background-color: #21FF06;
+            }
+}
+
+
+@media only screen and (min-width: 813px) and (max-width: 1023px) {  
+          .imdrag{
+            margin-right: 0px;
+            margin-left: 0px;
+            margin-top: -388px;
+            background-image: url('images/812.png');
+            height: 400px;
+            background-repeat: no-repeat;
+            }
+            .drop {
+            margin: 20px 0;
+            padding: 5px;
+            border: 2px dotted orange;
+            border-radius: 5px;
+            float: left;
+            width: 208px;
+            height: 102px;
+            margin-top: 100px;
+            margin-left: 74px;
+            }
+
+            .drop.hovering {
+            background-color: #21FF06;
+            }
+            .drop2 {
+            margin: 20px 0;
+            padding: 5px;
+            border: 2px dotted orange;
+            border-radius: 5px;
+            float: left;
+            width: 193px;
+            height: 102px;
+            margin-top: 100px;
+            margin-left: 5px;
+            }
+
+            .drop2.hovering {
+            background-color: #21FF06;
+            }
+            .drop3 {
+            margin: 20px 0;
+            padding: 5px;
+            border: 2px dotted orange;
+            border-radius: 5px;
+            float: left;
+            width: 182px;
+            height: 104px;
+            margin-top: -122px;
+            margin-left: 486px;
+            }
+
+            .drop3.hovering {
+            background-color: #21FF06;
+            }
+            .drop4 {
+            margin: 20px 0;
+            padding: 5px;
+            border: 2px dotted orange;
+            border-radius: 5px;
+            float: left;
+            width: 207px;
+            height: 104px;
+            margin-top: -6px;
+            margin-left: 75px;
+            }
+
+            .drop4.hovering {
+            background-color: #21FF06;
+            }
+            .drop5 {
+            margin: 20px 0;
+            padding: 5px;
+            border: 2px dotted orange;
+            border-radius: 5px;
+            float: left;
+            width: 193px;
+            height: 104px;
+            margin-top: -7px;
+            margin-left: 5px;
+            }
+
+            .drop5.hovering {
+            background-color: #21FF06;
+            }
+            .drop6 {
+            margin: 20px 0;
+            padding: 5px;
+            border: 2px dotted orange;
+            border-radius: 5px;
+            float: left;
+            width: 182px;
+            height: 104px;
+            margin-top: -125px;
+            margin-left: 486px;
+            }
+
+            .drop6.hovering {
+            background-color: #21FF06;
+            }
+            .drop7 {
+            margin: 20px 0;
+            padding: 5px;
+            border: 2px dotted orange;
+            border-radius: 5px;
+            width: 166px;
+            height: 60px;
+            margin-top: -8px;
+            margin-left: 169px;
+            float: left;
+            }
+
+            .drop7.hovering {
+            background-color: #21FF06;
+            }
+            .drop8 {
+            margin: 20px 0;
+            padding: 5px;
+            border: 2px dotted orange;
+            border-radius: 5px;
+            width: 166px;
+            height: 60px;
+            margin-top: -10px;
+            margin-right: -6px;
+            float: right;
+            }
+
+            .drop8.hovering {
+            background-color: #21FF06;
+            }
+} 
+
+@media only screen and (min-width: 1024px) and (max-width: 1365px) {  
+          .imdrag{
+            margin-right: 0px;
+            margin-left: 0px;
+            margin-top: -659px;
+            background-image: url('images/1365.png');
+            height: 675px;
+            background-repeat: no-repeat;
+            }
+            .drop {
+            margin: 20px 0;
+            padding: 5px;
+            border: 2px dotted orange;
+            border-radius: 5px;
+            float: left;
+            width: 349px;
+            height: 176px;
+            margin-top: -462px;
+            margin-left: 134px;
+            }
+
+            .drop.hovering {
+            background-color: #21FF06;
+            }
+            .drop2 {
+            margin: 20px 0;
+            padding: 5px;
+            border: 2px dotted orange;
+            border-radius: 5px;
+            float: left;
+            width: 326px;
+            height: 175px;
+            margin-top: -462px;
+            margin-left: 491px;
+            }
+
+            .drop2.hovering {
+            background-color: #21FF06;
+            }
+            .drop3 {
+            margin: 20px 0;
+            padding: 5px;
+            border: 2px dotted orange;
+            border-radius: 5px;
+            float: left;
+            width: 306px;
+            height: 175px;
+            margin-top: -462px;
+            margin-left: 826px;
+            }
+
+            .drop3.hovering {
+            background-color: #21FF06;
+            }
+            .drop4 {
+            margin: 20px 0;
+            padding: 5px;
+            border: 2px dotted orange;
+            border-radius: 5px;
+            float: left;
+            width: 350px;
+            height:176px;
+            margin-top: -265px;
+            margin-left: 134px;
+            }
+
+            .drop4.hovering {
+            background-color: #21FF06;
+            }
+            .drop5 {
+            margin: 20px 0;
+            padding: 5px;
+            border: 2px dotted orange;
+            border-radius: 5px;
+            float: left;
+            width: 325px;
+            height: 175px;
+            margin-top: -265px;
+            margin-left: 491px;
+            }
+
+            .drop5.hovering {
+            background-color: #21FF06;
+            }
+            .drop6 {
+            margin: 20px 0;
+            padding: 5px;
+            border: 2px dotted orange;
+            border-radius: 5px;
+            float: left;
+            width: 306px;
+            height: 175px;
+            margin-top: -265px;
+            margin-left: 827px;
+            }
+
+            .drop6.hovering {
+            background-color: #21FF06;
+            }
+            .drop7 {
+            padding: 5px;
+            border: 2px dotted orange;
+            border-radius: 5px;
+            width: 306px;
+            height: 70px;
+            margin-top: 617px;
+            margin-left: 339px;
+            }
+
+            .drop7.hovering {
+            background-color: #21FF06;
+            }
+            .drop8 {
+            padding: 5px;
+            border: 2px dotted orange;
+            border-radius: 5px;
+            width: 306px;
+            height: 70px;
+            margin-top: -121px;
+            margin-left: 1002px;
+            float: left;
+            }
+
+            .drop8.hovering {
+            background-color: #21FF06;
+            }
+} 
+
+@media only screen and (min-width: 1366px) {  
+          .imdrag{
+            margin-right: 0px;
+            margin-left: 0px;
+            margin-top: -660px;
+            background-image: url(images/1365.png);
+            height: 675px;
+            background-repeat: no-repeat;
+            }
+            .drop {
+            margin: 20px 0;
+            padding: 5px;
+            border: 2px dotted orange;
+            border-radius: 5px;
+            float: left;
+            width: 349px;
+            height: 176px;
+            margin-top: -462px;
+            margin-left: 134px;
+            }
+
+            .drop.hovering {
+            background-color: #21FF06;
+            }
+            .drop2 {
+            margin: 20px 0;
+            padding: 5px;
+            border: 2px dotted orange;
+            border-radius: 5px;
+            float: left;
+            width: 326px;
+            height: 175px;
+            margin-top: -462px;
+            margin-left: 491px;
+            }
+
+            .drop2.hovering {
+            background-color: #21FF06;
+            }
+            .drop3 {
+            margin: 20px 0;
+            padding: 5px;
+            border: 2px dotted orange;
+            border-radius: 5px;
+            float: left;
+            width: 306px;
+            height: 175px;
+            margin-top: -462px;
+            margin-left: 826px;
+            }
+
+            .drop3.hovering {
+            background-color: #21FF06;
+            }
+            .drop4 {
+            margin: 20px 0;
+            padding: 5px;
+            border: 2px dotted orange;
+            border-radius: 5px;
+            float: left;
+            width: 350px;
+            height:176px;
+            margin-top: -265px;
+            margin-left: 134px;
+            }
+
+            .drop4.hovering {
+            background-color: #21FF06;
+            }
+            .drop5 {
+            margin: 20px 0;
+            padding: 5px;
+            border: 2px dotted orange;
+            border-radius: 5px;
+            float: left;
+            width: 325px;
+            height: 175px;
+            margin-top: -265px;
+            margin-left: 491px;
+            }
+
+            .drop5.hovering {
+            background-color: #21FF06;
+            }
+            .drop6 {
+            margin: 20px 0;
+            padding: 5px;
+            border: 2px dotted orange;
+            border-radius: 5px;
+            float: left;
+            width: 306px;
+            height: 175px;
+            margin-top: -265px;
+            margin-left: 827px;
+            }
+
+            .drop6.hovering {
+            background-color: #21FF06;
+            }
+            .drop7 {
+            padding: 5px;
+            border: 2px dotted orange;
+            border-radius: 5px;
+            width: 306px;
+            height: 70px;
+            margin-top: 617px;
+            margin-left: 339px;
+            }
+
+            .drop7.hovering {
+            background-color: #21FF06;
+            }
+            .drop8 {
+            padding: 5px;
+            border: 2px dotted orange;
+            border-radius: 5px;
+            width: 306px;
+            height: 70px;
+            margin-top: -121px;
+            margin-left: 1002px;
+            float: left;
+            }
+
+            .drop8.hovering {
+            background-color: #21FF06;
+            }
+} 

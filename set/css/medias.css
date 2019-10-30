@@ -1,0 +1,157 @@
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+  
+  //CSS
+  
+}
+
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  
+  //CSS
+  
+}
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+  //CSS
+  
+}
+
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  
+  //CSS
+  
+}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+  
+  //CSS
+  
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) and (orientation: landscape) {
+
+body {
+    margin: 0
+}
+  
+.container,
+.container-fluid {
+  margin-right: auto;
+  margin-left: auto;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+#wrapper {
+    position: absolute;
+    z-index: 1;
+    width: 200px;
+    overflow: hidden;
+    align-content: center;
+    margin-left: 15px;
+}
+#puzzle {
+  border: 2px solid #44a0e1;
+  border-radius: 10px;
+  color: #333;
+  height: auto;
+}
+#puzzle>div {
+    margin: 0 auto;
+}
+.puzzleSquare {
+  height: 40px;
+  width: 40px;
+  text-transform: uppercase;
+  border: 0;
+  font-size: 19px;
+}
+.container{
+    font-family: Comfortaa, cursive;
+    font-size: 16px;
+    width: -webkit-fill-available;
+    text-align: center;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.stuck_container {
+    background: #ffffff;
+    text-align: left;
+}
+.isStuck {
+  background: #ffffff;
+  z-index: 999;
+  border-bottom: 1px solid #25838e;
+}
+nav{
+  display: block;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: top;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+}

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie-edge">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+        <title>Interactive Majestic</title>
+        <script src="js/jquery-migrate-1.2.1.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Coiny" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+
+        <script src="js/jquery.crossword2.js"></script>
+        <script src="js/scriptcross2.js"></script>
+
+        <style>
+            table {
+                border-collapse: collapse;
+                border-spacing: 0;
+                max-width: 100%;
+                height: 20px;
+            }    
+            table tr {
+                width: 100%;
+            }
+            table td {
+                width: 40px;
+                height: 25px;
+                border: 1px solid #cdcdcd;
+                padding: 0;
+                margin: 0;
+                background: rgba(0, 0, 0, .2); 
+                position: relative;
+            }
+            td input {
+                width: 100%;
+                height: 100%;
+                padding: 0em;
+                border: none;
+                text-align: center;
+                font-size: 15px;
+                color: #666;
+            }
+            td input:focus {
+                background-color: #f0fff0;
+            }
+            td span {
+                color: #444;
+                font-size: 0.8em;
+                position: absolute;
+                top: -1px;
+                left: 1px;
+            }
+            input.done {
+                font-weight: bold;
+                color: green;
+            }
+            .active,
+            .clues-active {
+                background-color: #9ACD32;
+                font-size: 13px;
+            }
+            .clue-done {
+                color: red;
+                text-decoration: line-through;
+            }
+            #puzzle-wrapper {
+                align-content: center;
+                margin-right: 3%;
+            }
+            #puzzle-clues {
+                color:#211D60;
+            }
+            #puzzle-clues li {
+                font-size: .1px;
+                opacity: 0px;
+            }
+            .menu {
+                background-color: #D01D36;
+                color: white;
+                padding-top: 5px;
+                padding-left: 10px;
+                padding-right: 10px;
+                padding-bottom: 2px;
+                width: 100%;
+            }
+
+            .menu a {
+                color: white;
+                font-size: 15px;
+            }
+
+            #logoMajestic {
+                width: 50px;
+            }
+
+            .navbar-brand:hover {
+                color: white;
+            }
+            .item{
+                text-align: left;
+                padding-bottom: 5px;
+                padding-top: 5px;
+                line-height: 300%;
+            }
+            input:invalid {
+                border: 2px solid red;
+                border-radius: 5px;
+                border-bottom: 1px solid #1F72EA;
+            }
+            input:valid {
+                border-radius: 5px;
+                color: #00BC00;
+                border-bottom: 1px solid #1F72EA;
+            }
+        </style>
+    </head>
+  
+    <body style="background-image: url(images/engli.png)">
+        <!-- Barra de Navegación -->
+        <div class="menu">
+            <a style="color: white" href="#" class="navbar-brand"><img id="logoMajestic" src="images/majestic.png" alt=""></a>
+            <a class="navbar-brand" href="menu.html">Menu</a>
+            <a class="navbar-brand" href="crossword-menu.html">Crossword menu</a>
+        </div>
+        <div class="container">
+            <div style="margin-top: 20px;">
+                <div class="brand col" align="center">
+                    <p class="hidden-xs" style="font-family: 'Comfortaa', cursive;font-size: 40px; color: #85144b;">Crossword 2</p>
+                    <p class="hidden-xs" style="font-family: 'Comfortaa', cursive;font-size: 30px; color: #85144b;">Daily routines</p>
+                </div>
+            </div>
+        </div>
+        <!-- Menú  -->
+        <div class="container">
+            <div class="col-12 mx-auto">
+                <h5 style="font-size: 15px; margin-left: 20px;">
+                    <span style="font-size: 17px; font-family: 'Comfortaa', cursive; color: #291493; text-align: left;">•</span>
+                    Solve the crossword puzzle by writing the correct answers. Remember that a letter is written in each cell.
+                </h5>
+            </div>
+        </div>
+        <div class="container">
+            <div align="center" id="puzzle-wrapper"><!-- crossword puzzle appended here --></div>
+            <hr>
+            <h3>Across</h3>
+            <ul style="list-style: none;" class="item">
+                <li> <span style="font-size: 15px; font-family: 'Comfortaa', cursive; color: #291493; text-align: left;">1.</span> &nbsp; I <input style="background-color: rgba(255, 255, 255, .1); height: 35px; text-align: center;" pattern="go to|Go to">to work by car.</li>
+                <li><span style="font-size: 15px; font-family: 'Comfortaa', cursive; color: #291493; text-align: left;">2.</span> &nbsp; I <input style="background-color: rgba(255, 255, 255, .1); height: 35px; text-align: center;" pattern="start|Start">work at 9:00 a. m.</li>
+                <li><span style="font-size: 15px; font-family: 'Comfortaa', cursive; color: #291493; text-align: left;">4.</span> &nbsp; After dinner I <input style="background-color: rgba(255, 255, 255, .1); height: 35px; text-align: center;" pattern="wash|Wash">the dishes.</li>
+                <li><span style="font-size: 15px; font-family: 'Comfortaa', cursive; color: #291493; text-align: left;">6.</span> &nbsp; My brothers <input style="background-color: rgba(255, 255, 255, .1); height: 35px; text-align: center;" pattern="go to|Go to">bed at 10:00 p. m.</li>
+                <li><span style="font-size: 15px; font-family: 'Comfortaa', cursive; color: #291493; text-align: left;">8.</span> &nbsp; Before go running I <input style="background-color: rgba(255, 255, 255, .1); height: 35px; text-align: center;" pattern="have|Have">a shower.</li>
+                <li><span style="font-size: 15px; font-family: 'Comfortaa', cursive; color: #291493; text-align: left;">10.</span> &nbsp; I <input style="background-color: rgba(255, 255, 255, .1); height: 35px; text-align: center;" pattern="get|Get">dressed before to have a breakfast.</li>
+                <li><span style="font-size: 15px; font-family: 'Comfortaa', cursive; color: #291493; text-align: left;">12.</span> &nbsp; After breakfast I <input style="background-color: rgba(255, 255, 255, .1); height: 35px; text-align: center;" pattern="leave|Leave">home.</li>
+                <li><span style="font-size: 15px; font-family: 'Comfortaa', cursive; color: #291493; text-align: left;">14.</span> &nbsp; I <input style="background-color: rgba(255, 255, 255, .1); height: 35px; text-align: center;" pattern="get up|Get up">up at 7:05 in the morning.</li>
+                <li><span style="font-size: 15px; font-family: 'Comfortaa', cursive; color: #291493; text-align: left;">15.</span> &nbsp; When I arrive at home I <input style="background-color: rgba(255, 255, 255, .1); height: 35px; text-align: center;" pattern="listen|Listen">to the radio.</li>
+                <li><span style="font-size: 15px; font-family: 'Comfortaa', cursive; color: #291493; text-align: left;">16.</span> &nbsp; Before cook the lunch I <input style="background-color: rgba(255, 255, 255, .1); height: 35px; text-align: center;" pattern="go|Go">shopping.</li>
+                <li><span style="font-size: 15px; font-family: 'Comfortaa', cursive; color: #291493; text-align: left;">17.</span> &nbsp; My typical day I <input style="background-color: rgba(255, 255, 255, .1); height: 35px; text-align: center;" pattern="wake up|Wake up">up at 7:00 in the morning.</li>
+                <li><span style="font-size: 15px; font-family: 'Comfortaa', cursive; color: #291493; text-align: left;">18.</span> &nbsp; I always <input style="background-color: rgba(255, 255, 255, .1); height: 35px; text-align: center;" pattern="read|Read">a book before to sleep.</li>
+            </ul>
+            <hr>
+            <h3>Down</h3>
+            <ul style="list-style: none;" class="item">
+                <li> <span style="font-size: 15px; font-family: 'Comfortaa', cursive; color: #291493; text-align: left;">1.</span> &nbsp; My brother and sister <input style="background-color: rgba(255, 255, 255, .1); height: 35px; text-align: center;" pattern="go to|Go to">school every day.</li>
+                <li><span style="font-size: 15px; font-family: 'Comfortaa', cursive; color: #291493; text-align: left;">3.</span> &nbsp; On Friday I <input style="background-color: rgba(255, 255, 255, .1); height: 35px; text-align: center;" pattern="finish|Finish">work at 8:00 p. m.</li>
+                <li><span style="font-size: 15px; font-family: 'Comfortaa', cursive; color: #291493; text-align: left;">5.</span> &nbsp; My mom and I <input style="background-color: rgba(255, 255, 255, .1); height: 35px; text-align: center;" pattern="do|Do">the housework at the weekend.</li>
+                <li><span style="font-size: 15px; font-family: 'Comfortaa', cursive; color: #291493; text-align: left;">7.</span> &nbsp; On Sunday I <input style="background-color: rgba(255, 255, 255, .1); height: 35px; text-align: center;" pattern="watch|Watch">TV all day.</li>
+                <li><span style="font-size: 15px; font-family: 'Comfortaa', cursive; color: #291493; text-align: left;">8.</span> &nbsp; I <input style="background-color: rgba(255, 255, 255, .1); height: 35px; text-align: center;" pattern="have|Have">a breakfast with my son.</li>
+                <li><span style="font-size: 15px; font-family: 'Comfortaa', cursive; color: #291493; text-align: left;">9.</span> &nbsp; I often <input style="background-color: rgba(255, 255, 255, .1); height: 35px; text-align: center;" pattern="take|Take">a taxi to go home.</li>
+                <li><span style="font-size: 15px; font-family: 'Comfortaa', cursive; color: #291493; text-align: left;">10.</span> &nbsp; My family and I <input style="background-color: rgba(255, 255, 255, .1); height: 35px; text-align: center;" pattern="get home|Get home">home at about 9:00 p. m.</li> 
+            </ul>
+        </div>
+        
+        <div class="container">
+            <div class="btn-group-sm mx-auto">
+                <a href="respuestas/crossword2.pdf">
+                    <button type="button" class="btn btn-outline-dark">Answers</button>
+                </a>
+                <!-- <a href="../index.html">
+                    <button type="button" class="btn btn-outline-danger">Start</button>
+                </a>
+                <a href="menu.html">
+                    <button type="button" class="btn btn-outline-warning">Behind</button>
+                </a> -->
+                <a href="crossword2.html">
+                    <button type="button" class="btn btn-outline-success">Restart</button>
+                </a>
+            </div>
+        </div>
+        <div style="padding-bottom: 640px;background: no-repeat url(images/ninos.png) bottom center;width: 100%;"></div>
+            
+        <footer style="background-color: brown; padding-top: 10px;">
+            <div class="container">
+                <div class="row">
+                    <p style="color: white; font-size: 10px;">
+                        <span>&copy;&nbsp;
+                            <span class="copyright-year"></span>
+                            Todos los derechos reservados. &nbsp;
+                        </span>
+                        <a style="color: white; font-size: 10px;" href="https://www.3d-estudio.com.mx">3D Estudio.</a>
+                    </p>
+                </div>
+            </div>
+        </footer>
+
+        <script src="js/jquery.js"></script>
+        <script src="bootstrap/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/sweetalert.min.js"></script>
+        <script>
+            document.getElementById('puzzle').getElementsByTagName('input');
+        </script>
+    </body>
+</html>

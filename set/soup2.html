@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie-edge">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <meta name="format-detection" content="telephone=yes" />
+        <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Coiny" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/memoria.css">
+        <title>Interactive Majestic</title>
+        <link rel="stylesheet" href="css/owl-carousel.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/sopa.css">
+        <link rel="stylesheet" href="wordfind.css">
+        <script src="js/jquery.js"></script>
+        <script src="bootstrap/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/colores.js"></script>
+        <script type="text/javascript" src="js/eventos.js"></script>
+        <script type="text/javascript" src="js/activity.js"></script>
+        <script type="text/javascript" src="wordfind.js"></script>
+        <script type="text/javascript" src="wordfindgame.js"></script>
+
+        <style type="text/css">
+            .text-soup {
+                font-family: 'Comfortaa', cursive;
+                font-size: 30px;
+                line-height: 27px;
+            }
+            #scroller {
+                left: auto !important;
+                margin: auto;
+            }
+            #wrapper {
+                z-index: 1;
+                overflow: hidden;
+                bottom: 44px;
+                margin-left: auto;
+                margin-right: auto;
+                width: 100%;
+            }
+            .item{
+                text-align: left;
+                padding-bottom: 5px;
+                padding-top: 5px;
+                line-height: 300%;
+            }
+            input:invalid {
+                border: 2px solid red;
+                border-radius: 5px;
+                border-bottom: 1px solid #1F72EA;
+            }
+            input:valid {
+                border-radius: 5px;
+                color: #00BC00;
+                border-bottom: 1px solid #1F72EA;
+            }
+            .menu   {
+                background-color: #D01D36;
+                color: white;
+                padding-top: 5px;
+                padding-left: 10px;
+                padding-right: 10px;
+                padding-bottom: 2px;
+                width: 100%;
+            }
+            .menu a {
+                color: white;
+                font-size: 15px;
+            }
+            #logoMajestic {
+                width: 50px;
+            }
+            .navbar-brand:hover {
+                color: white;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <!-- Barra de Navegación -->
+        <div class="menu">
+            <a style="color: white" href="#" class="navbar-brand"><img id="logoMajestic" src="images/majestic.png" alt=""></a>
+            <a class="navbar-brand" href="menu.html">Menu</a>
+            <a class="navbar-brand" href="soup-menu.html">Soup menu</a>
+        </div>
+
+        <div class="container">
+            <div style="margin-top: 20px;">
+                <div class="brand col" align="center">
+                    <p class="hidden-xs" style="font-family: 'Comfortaa', cursive;font-size: 40px; color: #85144b;">Alphabet soup 2</p>
+                    <p class="hidden-xs" style="font-family: 'Comfortaa', cursive;font-size: 30px; color: #85144b;">Present simple (verbs)</p>
+                </div>
+            </div>
+        </div>
+			
+        <div class="page bg01">
+			<div class="container">
+                <div class="col-12 mx-auto">
+              	    <h5 style="font-size: 15px; margin-left: 20px;">
+						<span style="font-size: 17px; font-family: 'Comfortaa', cursive; color: #291493; text-align: left;">•</span>
+						Find in the alphabet soup the words that correctly complete the sentences. Click on the first letter and the last letter to select the word. Then, write down the answers in each sentence.
+				    </h5>
+                </div>
+						
+				<div id="wrapper">
+                    <div id="scroller">
+                        <div class="container" id="lienzo"></div>
+                        <hr>
+                        <ul style="list-style: decimal;" class="item">
+                            <li>&nbsp; She <input style="background-color: rgba(255, 255, 255, .1); height: 35px; text-align: center;" pattern="flies|Flies">from Mexico to Canada once a year.</li>
+                            <li>&nbsp; I <input style="background-color: rgba(255, 255, 255, .1); height: 35px; text-align: center;" pattern="clean|Clean">the robe at the gym every day.</li>
+                            <li>&nbsp; My boss <input style="background-color: rgba(255, 255, 255, .1); height: 35px; text-align: center;" pattern="talks|Talks">her assistant all day at work.</li>
+                            <li>&nbsp; The chef <input style="background-color: rgba(255, 255, 255, .1); height: 35px; text-align: center;" pattern="cooks|Cooks">an excellent rice at the local restaurant.</li>
+                            <li>&nbsp; The children <input style="background-color: rgba(255, 255, 255, .1); height: 35px; text-align: center;" pattern="have|Have">a lot of energy during the day.</li>
+                            <li>&nbsp; The mechanics <input style="background-color: rgba(255, 255, 255, .1); height: 35px; text-align: center;" pattern="fix|Fix">cars in a garage.</li>
+                            <li>&nbsp; I’m happy because my daughter <input style="background-color: rgba(255, 255, 255, .1); height: 35px; text-align: center;" pattern="comes|Comes">on weekends.</li>
+                            <li>&nbsp; People  <input style="background-color: rgba(255, 255, 255, .1); height: 35px; text-align: center;" pattern="say|Say">that football is the national sport in Mexico.</li>
+                            <li>&nbsp; My parents <input style="background-color: rgba(255, 255, 255, .1); height: 35px; text-align: center;" pattern="enjoy|Enjoy">going to the cinema with their friends.</li>
+                            <li>&nbsp; I <input style="background-color: rgba(255, 255, 255, .1); height: 35px; text-align: center;" pattern="go|Go">to the supermarket once a week.</li>
+                            <li>&nbsp; My teacher <input style="background-color: rgba(255, 255, 255, .1); height: 35px; text-align: center;" pattern="helps|Helps">me every day when I don’t understand.</li>
+                            <li>&nbsp; The baby <input style="background-color: rgba(255, 255, 255, .1); height: 35px; text-align: center;" pattern="cries|Cries">when he is hungry. </li>
+                            <li>&nbsp; We <input style="background-color: rgba(255, 255, 255, .1); height: 35px; text-align: center;" pattern="dance|Dance">tango three times a week.</li>
+                            <li>&nbsp; She always <input style="background-color: rgba(255, 255, 255, .1); height: 35px; text-align: center;" pattern="buys|Buys">new clothes at the mall.</li>
+                            <li>&nbsp; My cousin  <input style="background-color: rgba(255, 255, 255, .1); height: 35px; text-align: center;" pattern="invites|Invites">a lot of people to his party every year.</li>
+                            <li>&nbsp; They <input style="background-color: rgba(255, 255, 255, .1); height: 35px; text-align: center;" pattern="color|Color">the draw with bright crayons!</li>
+                            <li>&nbsp; I love pizza. It <input style="background-color: rgba(255, 255, 255, .1); height: 35px; text-align: center;" pattern="makes|Makes">me feel happy.</li>
+                            <li>&nbsp; My teacher is very funny. He makes us  <input style="background-color: rgba(255, 255, 255, .1); height: 35px; text-align: center;" pattern="laugh|Laugh">in class. </li>
+                            <li>&nbsp; I <input style="background-color: rgba(255, 255, 255, .1); height: 35px; text-align: center;" pattern="call|Call">my mom every time I feel sad. She gives me good advices.</li>
+                            <li>&nbsp; Richard and me usually  <input style="background-color: rgba(255, 255, 255, .1); height: 35px; text-align: center;" pattern="take|Take">pictures of the church, it’s our hobby.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="btn-group-sm mx-auto">
+                        <a href="respuestas/soup2.pdf">
+                            <button type="button" class="btn btn-outline-dark">Answers</button>
+                        </a>
+                        <!-- <a href="../index.html">
+                            <button type="button" class="btn btn-outline-danger">Start</button>
+                        </a>
+                        <a href="menu.html">
+                            <button type="button" class="btn btn-outline-warning">Behind</button>
+                        </a> -->
+                        <a href="soup2.html">
+                            <button type="button" class="btn btn-outline-success">Restart</button>
+                        </a>
+                        <a href="soup3.html">
+                            <button type="button" class="btn btn-outline-primary">Following</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+			<div style="padding-bottom: 640px;background: no-repeat url(images/ninos.png) bottom center;width: 100%;"></div>
+				
+            <footer>
+                <div class="container wow fadeInUp">
+                    <div class="row">
+                        <p style="color: white; font-size: 10px;">
+                            <span>&copy;&nbsp;
+                                <span class="copyright-year"></span>
+                                Todos los derechos reservados. &nbsp;
+                            </span>
+                            <a style="color: white; font-size: 10px;" href="https://www.3d-estudio.com.mx">3D Estudio.</a>
+                        </p>
+                    </div>
+                </div>
+            </footer>
+     	</div>
+
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="js/sweetalert.min.js"></script>
+        <script src="js/script.js"></script>
+        <script>
+            var arrayTemp = [
+                'clean',    //ok
+                'talks',    //ok
+                'cooks',    //ok
+                'flies',    //ok
+                'have',     //ok
+                'fix',      //ok
+                'comes',    //ok
+                'say',      //ok
+                'enjoy',    //ok
+                'go',       //ok
+                'helps',    //ok
+                'cries',    //ok
+                'dance',    //ok
+                'buys',     //ok
+                'invites',  //ok
+                'color',    //ok
+                'makes',    //ok
+                'laugh',    //ok
+                'call',     //ok
+                'take',     //ok
+            ];
+            var temp = arrayTemp.map(word => WordFindGame.insertWordBefore($('#add-word').parent(), word));
+        
+            $(document).on('click', '#lienzo', function () {
+                if(arrayTemp.length == $('#lienzo .line').length) {
+                    swal("Congratulations!", "You did it very well.", "success");
+                }
+            });
+    </script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="set/js/lockWebSite.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/sopa.js"></script>
+  </body>
+</html>

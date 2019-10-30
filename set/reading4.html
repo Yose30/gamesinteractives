@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <meta name="format-detection" content="telephone=yes" />
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+    <title>Interactive Majestic</title>
+    <link rel="stylesheet" href="css/owl-carousel.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/sweetalert.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel='stylesheet' href='http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'>
+    <script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+    <script type="text/javascript" src="js/jquery2.js"></script>
+    <style>
+      .item {
+        text-align: left;
+        padding-bottom: 5px;
+        padding-top: 5px;
+        line-height: 300%;
+      }
+      .menu {
+        background-color: #D01D36;
+        color: white;
+        padding-top: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 2px;
+        width: 100%;
+      }
+      .menu a {
+        color: white;
+        font-size: 15px;
+      }
+      #logoMajestic {
+        width: 50px;
+      }
+      .navbar-brand:hover {
+        color: white;
+      }
+      .checkbox {
+        position: relative;
+        margin-top: 100px;
+      }
+      .checkbox-error {
+        position: relative;
+        margin-top: 100px;
+      }
+      .checkbox label {
+        color: #FBB202;
+      }
+      /* .checkbox-error label {
+        color: #FC0107;
+      } */
+      .checkbox label {
+        color: #FBB202;
+      }
+      .checkbox-error label {
+        color: #FBB202;
+      }
+      .checkbox label:after {
+        font-family: FontAwesome;
+        -webkit-font-feature-settings: normal;
+        font-feature-settings: normal;
+        font-weight: normal;
+        line-height: 1;
+        text-rendering: auto;
+        font-size: 22px;
+        display: block;
+      }
+      .checkbox-error label:after {
+        font-family: FontAwesome;
+        -webkit-font-feature-settings: normal;
+        font-feature-settings: normal;
+        font-weight: normal;
+        line-height: 1;
+        text-rendering: auto;
+        font-size: 22px;
+        display: block;
+      }
+      .checkbox label:after {
+        content: '\f096';
+        font-size: 32px;
+      }
+      .checkbox-error label:after {
+        content: '\f096';
+        font-size: 32px;
+      }
+      .checkbox input {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 5;
+        opacity: 0;
+        cursor: pointer;
+      }
+      .checkbox-error input {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 5;
+        opacity: 0;
+        cursor: pointer;
+      }
+      .checkbox input:checked+label {
+        color: #00BC00;
+      }
+      .checkbox-error input:checked+label {
+        /* color: #FEAB59; */
+        color: #FC0107;
+      }
+      .checkbox input:checked+label:after {
+        content: '';
+      }
+      .checkbox-error input:checked+label:after {
+        content: '';
+      }
+      .checkbox input:disabled+label:before {
+        content: '\f119';
+      }
+      .checkbox-error input:disabled+label:before {
+        content: '\f119';
+      }
+    </style>
+  </head>
+  <body style="background-image: url(images/engli.png)">
+    <!-- Barra de Navegación -->
+    <div class="menu">
+      <a style="color: white" href="#" class="navbar-brand"><img id="logoMajestic" src="images/majestic.png" alt=""></a>
+      <a class="navbar-brand" href="menu.html">Menu</a>
+      <a class="navbar-brand" href="reading-menu.html">Reading menu</a>
+    </div>
+    <!-- Menú  -->
+    <div class="container">
+      <div style="margin-top: 30px;">
+        <div class="brand col" align="center">
+          <p class="hidden-xs" style="font-family: 'Comfortaa', cursive;font-size: 40px; color: #85144b;">Reading 4</p>
+        </div>
+      </div>
+      <div class="col-12 mx-auto">
+        <h5 style="font-size: 15px; margin-left: 20px;">
+          <span style="font-size: 17px; font-family: 'Comfortaa', cursive; color: #291493">•</span> Read the text.
+        </h5>
+      </div>
+      <div class="col">
+        <!-- <video width="90%" controls>
+          <source src="videos/reading4_1.mp4" type="video/mp4">
+        </video> -->
+        <iframe src="https://drive.google.com/file/d/1nJgIKeXFt12vRSFMWJnqEaq4Xi_sYZgE/preview" width="100%" height="500px"></iframe>
+      </div>
+      <div>&nbsp;</div>
+      <div class="col-12 mx-auto">
+        <h5 style="font-size: 15px; margin-left: 20px;">
+          <span style="font-size: 17px; font-family: 'Comfortaa', cursive; color: #291493">•</span> 
+          Match the holiday with its description.
+        </h5>
+      </div>
+      <div class="col">
+        <table class="table table-hover table-responsive">
+          <tr>
+            <td class="col-6" align="center">Sentence</td>
+            <td class="col-3" align="center">True</td>
+            <td class="col-3" align="center">False</td>
+          </tr>
+          <tr>
+            <td>
+              <span style="font-size: 15px; font-family: 'Comfortaa', cursive; color: #291493; text-align: left;">1.</span>
+              Vicky loves gymnastics, because she feels like she is working.
+            </td>
+            <td align="center" class="checkbox-error">
+              <input type="checkbox" value="1" id="ch1" name="check-error" onclick="uncheck()">
+              <label></label>
+            </td>
+            <td align="center" class="checkbox">
+              <input type="checkbox" value="2" id="ch2" name="check-true" onclick="uncheck()">
+              <label></label>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <span style="font-size: 15px; font-family: 'Comfortaa', cursive; color: #291493; text-align: left;">2.</span>
+              Dave isn’t the name of Vicky’s coach.
+            </td>
+            <td align="center" class="checkbox-error">
+              <input type="checkbox" value="3" id="ch3" name="check-error" onclick="uncheck()">
+              <label></label>
+            </td>
+            <td align="center" class="checkbox">
+              <input type="checkbox" value="4" id="ch4" name="check-true" onclick="uncheck()">
+              <label></label>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <span style="font-size: 15px; font-family: 'Comfortaa', cursive; color: #291493; text-align: left;">3.</span>
+              Warm-up is the first thing that Vicky’s group does when they work out.
+            </td>
+            <td align="center" class="checkbox">
+              <input type="checkbox" value="5" id="ch5" name="check-true" onclick="uncheck()">
+              <label></label>
+            </td>
+            <td align="center" class="checkbox-error">
+              <input type="checkbox" value="6" id="ch6" name="check-error" onclick="uncheck()">
+              <label></label>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <span style="font-size: 15px; font-family: 'Comfortaa', cursive; color: #291493; text-align: left;">4.</span>
+              Vicky says that if you want to do a good job on the bars you need to run every day.
+            </td>
+            <td align="center" class="checkbox-error">
+              <input type="checkbox" value="7" id="ch7" name="check-error" onclick="uncheck()">
+              <label></label>
+            </td>
+            <td align="center" class="checkbox">
+              <input type="checkbox" value="8" id="ch8" name="check-true" onclick="uncheck()">
+              <label></label>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <span style="font-size: 15px; font-family: 'Comfortaa', cursive; color: #291493; text-align: left;">5.</span>
+              1:30 minutes each person has to do a beam routine.
+            </td>
+            <td align="center" class="checkbox-error">
+              <input type="checkbox" value="9" id="ch9" name="check-true" onclick="uncheck()">
+              <label></label>
+            </td>
+            <td align="center" class="checkbox">
+              <input type="checkbox" value="10" id="ch10" name="check-error" onclick="uncheck()">
+              <label></label>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <span style="font-size: 15px; font-family: 'Comfortaa', cursive; color: #291493; text-align: left;">6.</span>
+              The balance beam is one of her favorite events.
+            </td>
+            <td align="center" class="checkbox">
+              <input type="checkbox" value="11" id="ch11" name="check-true" onclick="uncheck()">
+              <label></label>
+            </td>
+            <td align="center" class="checkbox-error">
+              <input type="checkbox" value="12" id="ch12" name="check-error" onclick="uncheck()">
+              <label></label>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <span style="font-size: 15px; font-family: 'Comfortaa', cursive; color: #291493; text-align: left;">7.</span>
+              Vicky works out first of school.
+            </td>
+            <td align="center" class="checkbox">
+              <input type="checkbox" value="13" id="ch13" name="check-error" onclick="uncheck()">
+              <label></label>
+            </td>
+            <td align="center" class="checkbox-error">
+              <input type="checkbox" value="14" id="ch14" name="check-true" onclick="uncheck()">
+              <label></label>
+            </td>
+          <tr>
+            <td>
+              <span style="font-size: 15px; font-family: 'Comfortaa', cursive; color: #291493; text-align: left;">8.</span>
+              Vicky warms-up in Dave’s house.
+            </td>
+            <td align="center" class="checkbox-error">
+              <input type="checkbox" value="15" id="ch15" name="check-error" onclick="uncheck()">
+              <label></label>
+            </td>
+            <td align="center" class="checkbox">
+              <input type="checkbox" value="16" id="ch16" name="check-true" onclick="uncheck()">
+              <label></label>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <span style="font-size: 15px; font-family: 'Comfortaa', cursive; color: #291493; text-align: left;">9.</span>
+              Dave tells them stories and jokes.
+            </td>
+            <td align="center" class="checkbox">
+              <input type="checkbox" value="17" id="ch17" name="check-true" onclick="uncheck()">
+              <label></label>
+            </td>
+            <td align="center" class="checkbox-error">
+              <input type="checkbox" value="18" id="ch18" name="check-error" onclick="uncheck()">
+              <label></label>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <span style="font-size: 15px; font-family: 'Comfortaa', cursive; color: #291493; text-align: left;">10.</span>
+              Vicky’s mom drives a bus.
+            </td>
+            <td align="center" class="checkbox-error">
+              <input type="checkbox" value="19" id="ch19" name="check-error" onclick="uncheck()">
+              <label></label>
+            </td>
+            <td align="center" class="checkbox">
+              <input type="checkbox" value="20" id="ch20" name="check-true" onclick="uncheck()">
+              <label></label>
+            </td>
+          </tr>
+        </table>
+        <div class="modal fade" id="mimodal">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div style="padding: 10px;">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+              </div>
+              <div><p id="mensaje"></p></div>
+              <footer style="text-align: right;">
+                <img src="images/face.gif" width="220" alt="">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+              </footer>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="btn-group-sm mx-auto">
+        <a href="respuestas/reading4.pdf">
+          <button type="button" class="btn btn-outline-dark">Answers</button>
+        </a>
+        <!-- <a href="../index.html">
+          <button type="button" class="btn btn-outline-danger">Start</button>
+        </a>
+        <a href="menu.html">
+          <button type="button" class="btn btn-outline-warning">Behind</button>
+        </a> -->
+        <a href="reading4.html">
+          <button type="button" class="btn btn-outline-success">Restart</button>
+        </a>
+      </div>
+    </div>
+
+    <div style="padding-bottom: 640px;background: no-repeat url(images/ninos.png) bottom center;width: 100%;"></div>
+
+    <footer style="background-color: brown; padding-top: 10px;">
+      <div class="container">
+        <div class="row">
+          <p style="color: white; font-size: 10px;">
+            <span>&copy;&nbsp;
+              <span class="copyright-year"></span>
+              Todos los derechos reservados. &nbsp;
+            </span>
+            <a style="color: white; font-size: 10px;" href="https://www.3d-estudio.com.mx">3D Estudio.</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+    <script type="text/javascript">
+      function uncheck() {
+        var checkbox1 = document.getElementById("ch1");
+        var checkbox2 = document.getElementById("ch2");
+        var checkbox3 = document.getElementById("ch3");
+        var checkbox4 = document.getElementById("ch4");
+        var checkbox5 = document.getElementById("ch5");
+        var checkbox6 = document.getElementById("ch6");
+        var checkbox7 = document.getElementById("ch7");
+        var checkbox8 = document.getElementById("ch8");
+        var checkbox9 = document.getElementById("ch9");
+        var checkbox10 = document.getElementById("ch10");
+        var checkbox11 = document.getElementById("ch11");
+        var checkbox12 = document.getElementById("ch12");
+        var checkbox13 = document.getElementById("ch13");
+        var checkbox14 = document.getElementById("ch14");
+        var checkbox15 = document.getElementById("ch15");
+        var checkbox16 = document.getElementById("ch16");
+        var checkbox17 = document.getElementById("ch17");
+        var checkbox18 = document.getElementById("ch18");
+        var checkbox19 = document.getElementById("ch19");
+        var checkbox20 = document.getElementById("ch20");
+        checkbox1.onclick = function () {
+          if (checkbox1.checked != false) {
+            checkbox2.checked = null;
+          }
+        }
+        checkbox2.onclick = function () {
+          if (checkbox2.checked != false) {
+            checkbox1.checked = null;
+          }
+        }
+        checkbox3.onclick = function () {
+          if (checkbox3.checked != false) {
+            checkbox4.checked = null;
+          }
+        }
+        checkbox4.onclick = function () {
+          if (checkbox4.checked != false) {
+            checkbox3.checked = null;
+          }
+        }
+        checkbox5.onclick = function () {
+          if (checkbox5.checked != false) {
+            checkbox6.checked = null;
+          }
+        }
+        checkbox6.onclick = function () {
+          if (checkbox6.checked != false) {
+            checkbox5.checked = null;
+          }
+        }
+        checkbox7.onclick = function () {
+          if (checkbox7.checked != false) {
+            checkbox8.checked = null;
+          }
+        }
+        checkbox8.onclick = function () {
+          if (checkbox8.checked != false) {
+            checkbox7.checked = null;
+          }
+        }
+        checkbox9.onclick = function () {
+          if (checkbox9.checked != false) {
+            checkbox10.checked = null;
+          }
+        }
+        checkbox10.onclick = function () {
+          if (checkbox10.checked != false) {
+            checkbox9.checked = null;
+          }
+        }
+        checkbox11.onclick = function () {
+          if (checkbox11.checked != false) {
+            checkbox12.checked = null;
+          }
+        }
+        checkbox12.onclick = function () {
+          if (checkbox12.checked != false) {
+            checkbox11.checked = null;
+          }
+        }
+        checkbox13.onclick = function () {
+          if (checkbox13.checked != false) {
+            checkbox14.checked = null;
+          }
+        }
+        checkbox14.onclick = function () {
+          if (checkbox14.checked != false) {
+            checkbox13.checked = null;
+          }
+        }
+        checkbox15.onclick = function () {
+          if (checkbox15.checked != false) {
+            checkbox16.checked = null;
+          }
+        }
+        checkbox16.onclick = function () {
+          if (checkbox16.checked != false) {
+            checkbox15.checked = null;
+          }
+        }
+        checkbox17.onclick = function () {
+          if (checkbox17.checked != false) {
+            checkbox18.checked = null;
+          }
+        }
+        checkbox18.onclick = function () {
+          if (checkbox18.checked != false) {
+            checkbox17.checked = null;
+          }
+        }
+        checkbox19.onclick = function () {
+          if (checkbox19.checked != false) {
+            checkbox20.checked = null;
+          }
+        }
+        checkbox20.onclick = function () {
+          if (checkbox20.checked != false) {
+            checkbox19.checked = null;
+          }
+        }
+      }
+    </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie-edge">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <meta name="format-detection" content="telephone=yes" />
+        <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Coiny" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/memoria.css">
+        <title>Interactive Majestic</title>
+        <link rel="stylesheet" href="css/owl-carousel.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/sopa.css">
+        <link rel="stylesheet" href="wordfind.css">
+        <script src="js/jquery.js"></script>
+        <script src="bootstrap/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/colores.js"></script>
+        <script type="text/javascript" src="js/eventos.js"></script>
+        <script type="text/javascript" src="js/activity3.js"></script>
+        <script type="text/javascript" src="wordfind.js"></script>
+        <script type="text/javascript" src="wordfindgame.js"></script>
+        <style type="text/css">
+            .text-soup {
+                font-family: 'Comfortaa', cursive;
+                font-size: 30px;
+                line-height: 27px;
+            }
+            #scroller {
+                left: auto !important;
+                margin: auto;
+            }
+            #wrapper {
+                z-index: 1;
+                overflow: hidden;
+                bottom: 44px;
+                margin-left: auto;
+                margin-right: auto;
+                width: 100%;
+            }
+            .item {
+                text-align: left;
+                padding-bottom: 5px;
+                padding-top: 5px;
+                line-height: 300%;
+            }
+            input:invalid {
+                border: 2px solid red;
+                border-radius: 5px;
+                border-bottom: 1px solid #1F72EA;
+            }
+            input:valid {
+                border-radius: 5px;
+                color: #00BC00;
+                border-bottom: 1px solid #1F72EA;
+            }
+            .menu   {
+                background-color: #D01D36;
+                color: white;
+                padding-top: 5px;
+                padding-left: 10px;
+                padding-right: 10px;
+                padding-bottom: 2px;
+                width: 100%;
+            }
+            .menu a {
+                color: white;
+                font-size: 15px;
+            }
+            #logoMajestic {
+                width: 50px;
+            }
+            .navbar-brand:hover {
+                color: white;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Barra de Navegación -->
+        <div class="menu">
+            <a style="color: white" href="#" class="navbar-brand"><img id="logoMajestic" src="images/majestic.png" alt=""></a>
+            <a class="navbar-brand" href="menu.html">Menu</a>
+            <a class="navbar-brand" href="soup-menu.html">Soup menu</a>
+        </div>
+        <div class="container">
+            <div style="margin-top: 20px;">
+                <div class="brand col" align="center">
+                    <p class="hidden-xs" style="font-family: 'Comfortaa', cursive;font-size: 40px; color: #85144b;">Alphabet soup 3</p>
+                    <p class="hidden-xs" style="font-family: 'Comfortaa', cursive;font-size: 30px; color: #85144b;">Places in a town (prepositions of place)</p>
+                </div>
+            </div>
+        </div>
+        <div class="page bg01">
+            <div class="container">
+                <div class="col-12 mx-auto">
+                    <h5 style="font-size: 15px; margin-left: 20px;">
+                        <span
+                            style="font-size: 17px; font-family: 'Comfortaa', cursive; color: #291493; text-align: left;">•</span>
+                        Find in the alphabet soup the words that correctly complete the sentences. Click on the first letter
+                        and the last letter to select the word. Then, write down the answers in each sentence.
+                    </h5>
+                </div>
+                <div id="wrapper">
+                    <div id="scroller">
+                        <div class="container" id="lienzo"></div>
+                        <hr>
+                        <ul style="list-style: decimal;" class="item">
+                            <li>&nbsp; In the <input
+                                    style="background-color: rgba(255, 255, 255, .1); height: 35px; text-align: center;"
+                                    pattern="hospital|Hospital">, doctors and nurses help people with their health.</li>
+                            <li>&nbsp; My grandpa’s <input
+                                    style="background-color: rgba(255, 255, 255, .1); height: 35px; text-align: center;"
+                                    pattern="farm|Farm">is fantastic. He has a lot of beautiful animals like cows and
+                                horses.</li>
+                            <li>&nbsp; . My children like to go to the <input
+                                    style="background-color: rgba(255, 255, 255, .1); height: 35px; text-align: center;"
+                                    pattern="zoo|Zoo">. They can see a lot of animals there.</li>
+                            <li>&nbsp; On Saturdays, I go to the toy <input
+                                    style="background-color: rgba(255, 255, 255, .1); height: 35px; text-align: center;"
+                                    pattern="store|Store">. I usually buy some game boards to play with my friends.</li>
+                            <li>&nbsp; There is a <input
+                                    style="background-color: rgba(255, 255, 255, .1); height: 35px; text-align: center;"
+                                    pattern="library|Library">near my school. It always has good books and magazines.</li>
+                            <li>&nbsp; The <input
+                                    style="background-color: rgba(255, 255, 255, .1); height: 35px; text-align: center;"
+                                    pattern="cinema|Cinema">is the perfect place to go with friends because you can watch
+                                movies and eat pop corns.</li>
+                            <li>&nbsp; The park is <input
+                                    style="background-color: rgba(255, 255, 255, .1); height: 35px; text-align: center;"
+                                    pattern="in front of| In front of">of my house. I can see it from my window.</li>
+                            <li>&nbsp; To get to the school, go <input
+                                    style="background-color: rgba(255, 255, 255, .1); height: 35px; text-align: center;"
+                                    pattern="straight|Straight">ahead for 4 blocks.</li>
+                            <li>&nbsp; My mom says that the drug store is <input
+                                    style="background-color: rgba(255, 255, 255, .1); height: 35px; text-align: center;"
+                                    pattern="between|Between">the hospital and the school.</li>
+                            <li>&nbsp; I like to go to the <input
+                                    style="background-color: rgba(255, 255, 255, .1); height: 35px; text-align: center;"
+                                    pattern="supermarket|Supermarket">because I can buy fruits, vegetables and even shampoo,
+                                everything is there.</li>
+                            <li>&nbsp; I’m <input
+                                    style="background-color: rgba(255, 255, 255, .1); height: 35px; text-align: center;"
+                                    pattern="on|On">my house. I’m having dinner.</li>
+                            <li>&nbsp; I prefer to go to the school by bike. I don’t like to wait for the bus at the <input
+                                    style="background-color: rgba(255, 255, 255, .1); height: 35px; text-align: center;"
+                                    pattern="bus stop| Bus stop">. </li>
+                            <li>&nbsp; She enjoys going to the <input
+                                    style="background-color: rgba(255, 255, 255, .1); height: 35px; text-align: center;"
+                                    pattern="cafe|Cafe">with her friends because they can drink coffee and chat for hours.
+                            </li>
+                            <li>&nbsp; The police <input
+                                    style="background-color: rgba(255, 255, 255, .1); height: 35px; text-align: center;"
+                                    pattern="station|Station">of my city is fantastic. It’s big and organized.</li>
+                            <li>&nbsp; He puts his backpack <input
+                                    style="background-color: rgba(255, 255, 255, .1); height: 35px; text-align: center;"
+                                    pattern="above|Above">the bed every day after school.</li>
+                            <li>&nbsp; I can’t find my cell phone, I think it is <input
+                                    style="background-color: rgba(255, 255, 255, .1); height: 35px; text-align: center;"
+                                    pattern="under|Under">the sofa.</li>
+                            <li>&nbsp; This <input
+                                    style="background-color: rgba(255, 255, 255, .1); height: 35px; text-align: center;"
+                                    pattern="park|Park">is the perfect place for children. The playground is so safe for
+                                them.</li>
+                            <li>&nbsp; My address is: 40 road, 68 <input
+                                    style="background-color: rgba(255, 255, 255, .1); height: 35px; text-align: center;"
+                                    pattern="street|Street">, Palm Avenue. </li>
+                            <li>&nbsp; The clock is <input
+                                    style="background-color: rgba(255, 255, 255, .1); height: 35px; text-align: center;"
+                                    pattern="here|Here">the coffee table. Do you see it?</li>
+                            <li>&nbsp; The book is <input
+                                    style="background-color: rgba(255, 255, 255, .1); height: 35px; text-align: center;"
+                                    pattern="behind|Behind">the TV. That’s why I can’t find it.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="btn-group-sm mx-auto">
+                        <a href="respuestas/soup3.pdf">
+                            <button type="button" class="btn btn-outline-dark">Answers</button>
+                        </a>
+                        <!-- <a href="../index.html">
+                            <button type="button" class="btn btn-outline-danger">Start</button>
+                        </a>
+                        <a href="menu.html">
+                            <button type="button" class="btn btn-outline-warning">Behind</button>
+                        </a> -->
+                        <a href="soup3.html">
+                            <button type="button" class="btn btn-outline-success">Restart</button>
+                        </a>
+                        <a href="soup4.html">
+                            <button type="button" class="btn btn-outline-primary">Following</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div style="padding-bottom: 640px;background: no-repeat url(images/ninos.png) bottom center;width: 100%;"></div>
+            <footer>
+                <div class="container wow fadeInUp">
+                    <div class="row">
+                        <p style="color: white; font-size: 10px;">
+                            <span>&copy;&nbsp;
+                                <span class="copyright-year"></span>
+                                Todos los derechos reservados. &nbsp;
+                            </span>
+                            <a style="color: white; font-size: 10px;" href="https://www.3d-estudio.com.mx">3D Estudio.</a>
+                        </p>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="js/sweetalert.min.js"></script>
+        <script src="js/script.js"></script>
+        <script>
+            var arrayTemp = [
+                'hospital',    //ok
+                'farm',    //ok
+                'zoo',    //ok
+                'store',    //ok
+                'library',     //ok
+                'cinema',      //ok
+                'in front of',    //ok
+                'straight',      //ok
+                'between',    //ok
+                'supermarket',       //ok
+                'bus stop',    //ok
+                'cafe',    //ok
+                'station',    //ok
+                'above',     //ok
+                'under',  //ok
+                'park',    //ok
+                'street',    //ok
+                'here',    //ok
+                'behind',     //ok
+                'on',     //ok
+            ];
+            var temp = arrayTemp.map(word => WordFindGame.insertWordBefore($('#add-word').parent(), word));
+            $(document).on('click', '#lienzo', function () {
+                if (arrayTemp.length == $('#lienzo .line').length) {
+                    swal("Congratulations!", "You did it very well.", "success");
+                }
+            });
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+        <script type="text/javascript" src="set/js/lockWebSite.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/sopa.js"></script>
+    </body>
+</html>
